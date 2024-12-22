@@ -1,0 +1,34 @@
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>ListUsersServlet</servlet-name>
+		<display-name>ListUsersServlet</display-name>
+		<description></description>
+		<servlet-class>com.bookstore.controller.admin.user.ListUsersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListUsersServlet</servlet-name>
+		<url-pattern>/Admin/Users_list</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CreateUsersServlet</servlet-name>
+		<display-name>CreateUsersServlet</display-name>
+		<description></description>
+		<servlet-class>com.bookstore.controller.admin.user.CreateUsersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateUsersServlet</servlet-name>
+		<url-pattern>/Admin/create_user</url-pattern>
+	</servlet-mapping>
+	
+	<!-- <error-page>
+		<error-code>404</error-code>
+		<location>/error/404.jsp</location>
+	</error-page> -->
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error/500.jsp</location>
+	</error-page>
+</web-app>

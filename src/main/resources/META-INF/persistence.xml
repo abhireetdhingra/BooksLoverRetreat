@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">     
+                     
+	 <persistence-unit name="website">
+        <properties>
+           <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bookstoredb"/> 
+           <!--  <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bookstore"/> changing because of cloud-->
+            <property name="javax.persistence.jdbc.user" value="root"/> 
+           <!--<property name="javax.persistence.jdbc.user" value="abhireet"/>changing because of cloud -->
+           <property name="javax.persistence.jdbc.password" value="Rendezvous$18"/>
+          <!--  <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>  -->
+          
+         <!--  <property name="hibernate.enable_lazy_load_no_trans" value="true"/> -->    <!-- This property is added in context to prevent deleting of book which has reviews associated with it -->    
+        </properties>
+    </persistence-unit>
+</persistence>

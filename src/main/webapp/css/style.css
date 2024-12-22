@@ -1,0 +1,90 @@
+ .color
+{
+	color:#ff4081;	/* This class works well on anchor tags as well as i tags when pictures are used */
+}
+.bgcolor{
+	background-color:#ff4081;
+}
+.whiteColor
+{
+	color:white;
+}
+.bgcolorAndColor
+{
+	background-color:#ff4081;
+	color:white;
+}
+
+.inputField::placeholder{
+	color:#ff4081;
+}
+
+.footer
+{
+	font-family: 'Inconsolata', monospace;
+    font-family: 'Lavishly Yours', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-item a:hover, .card-body a:hover, .dropdown-menu a:hover,#blackCol:hover,#cartAnchors:hover
+{
+	color:#ff4081;
+}
+
+#blackCol,#navbarDropdown{
+	color:black;
+}
+
+#buttonInFrontEnd
+{
+	color:white;
+	background-color:#ff4081;
+}
+#signUpAnchor
+{
+	color:#ff4081;
+	background-color:white;
+}
+
+.card-title
+{
+	font-size: small; 
+	font-weight: bold;
+}
+.modalFooter
+{
+	 padding: 0.75rem;
+	 border-top: 1px solid #e0e0e0;
+	 border-bottom-right-radius: calc(0.5rem - 1px);
+	 border-bottom-left-radius: calc(0.5rem - 1px);
+}
+table.normal {
+	border: 0;
+}
+
+.starColor
+{
+	color:orange;
+}
+
+/* Css for multilevel dropdown */
+.dropdown-menu li {
+	position: relative;
+}
+
+.dropdown-menu .dropdown-submenu {
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: -7px;
+}
+
+.dropdown-menu .dropdown-submenu-left {
+	right: 100%;
+	left: auto;
+}
+
+.dropdown-menu>li:hover>.dropdown-submenu {
+	display: block;
+}
